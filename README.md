@@ -43,7 +43,7 @@ I also put a folder called “img” in the download and I threw in a nice de Ko
 
 ## 安装
 ```
-brew install Caskroom/cask/kindlegen
+brew cask install kindlegen
 ```
 
 ## 使用
