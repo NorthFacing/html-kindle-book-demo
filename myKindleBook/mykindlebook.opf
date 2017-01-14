@@ -5,8 +5,8 @@
     <dc:title>My Kindle Book</dc:title>
     <dc:language>en</dc:language>
     <dc:identifier id="BookId" opf:scheme="ISBN">123456789X</dc:identifier>
-    <dc:creator opf:file-as="Garvin, Perry" opf:role="aut">Perry Garvin</dc:creator>
-    <dc:publisher>Amazon.com</dc:publisher>
+    <dc:creator opf:file-as="adolphor" opf:role="aut">adolphor</dc:creator>
+    <dc:publisher>adolphor.com</dc:publisher>
     <dc:subject>Reference</dc:subject>
     <dc:date>2011-12-07</dc:date>
     <dc:description>A short paragraph describing the publication … </dc:description>

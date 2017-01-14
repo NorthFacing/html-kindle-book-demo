@@ -49,9 +49,14 @@ brew cask install kindlegen
 ## 使用
 
 ```
+rm -f *.epub && rm -f *.mobi
 zip -r kindleBook.zip ./myKindleBook/*
 mv kindleBook.zip kindleBook.epub
 kindlegen kindleBook.epub
+
+# all in one line
+rm -f *.epub && rm -f *.mobi && 
+zip -r kindleBook.zip ./myKindleBook/* && mv kindleBook.zip kindleBook.epub && kindlegen kindleBook.epub
 ```
 
 创建成功信息：
@@ -59,14 +64,14 @@ kindlegen kindleBook.epub
 *************************************************************
  Amazon kindlegen(MAC OSX) V2.9 build 1028-0897292 
  命令行电子书制作软件 
- Copyright Amazon.com and its Affiliates 2014 
+ Copyright adolphor.com and its Affiliates 2014 
 *************************************************************
 
 信息(prcgen):I1047: 已添加的元数据dc:Title        "My Kindle Book"
 信息(prcgen):I1047: 已添加的元数据dc:Date         "2011-12-07"
 信息(prcgen):I1047: 已添加的元数据ISBN            "123456789X"
-信息(prcgen):I1047: 已添加的元数据dc:Creator      "Perry Garvin"
-信息(prcgen):I1047: 已添加的元数据dc:Publisher    "Amazon.com"
+信息(prcgen):I1047: 已添加的元数据dc:Creator      "adolphor"
+信息(prcgen):I1047: 已添加的元数据dc:Publisher    "adolphor.com"
 信息(prcgen):I1047: 已添加的元数据dc:Subject      "Reference"
 信息(prcgen):I1047: 已添加的元数据dc:Description  "A short paragraph describing the publication …"
 信息(prcgen):I1002: 解析文件  0000002

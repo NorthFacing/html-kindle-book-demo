@@ -5,8 +5,8 @@
 <ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
  
   <head>
-<!-- The following four metadata items are required for all NCX documents,
-including those conforming to the relaxed constraints of OPS 2.0 -->
+    <!-- The following four metadata items are required for all NCX documents,
+    including those conforming to the relaxed constraints of OPS 2.0 -->
  
     <meta name="dtb:uid" content="123456789X"/> <!-- same as in .opf -->
     <meta name="dtb:depth" content="1"/> <!-- 1 or higher -->
@@ -19,7 +19,7 @@ including those conforming to the relaxed constraints of OPS 2.0 -->
   </docTitle>
  
   <docAuthor>
-    <text>Garvin, Perry</text>
+    <text>adolphor</text>
   </docAuthor>
 
 <navMap>
