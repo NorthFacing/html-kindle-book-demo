@@ -38,7 +38,65 @@ You know that bar along the bottom of a Kindle that has points that allow you to
 ## img folder
 I also put a folder called “img” in the download and I threw in a nice de Kooning picture that you’ll see embedded in mykindlebook.html file.
 
+
+# kindelgen
+
+## 安装
+```
+brew install Caskroom/cask/kindlegen
+```
+
+## 使用
+
+```
+zip -r kindleBook.zip ./myKindleBook/*
+mv kindleBook.zip kindleBook.epub
+kindlegen kindleBook.epub
+```
+
+创建成功信息：
+```
+*************************************************************
+ Amazon kindlegen(MAC OSX) V2.9 build 1028-0897292 
+ 命令行电子书制作软件 
+ Copyright Amazon.com and its Affiliates 2014 
+*************************************************************
+
+信息(prcgen):I1047: 已添加的元数据dc:Title        "My Kindle Book"
+信息(prcgen):I1047: 已添加的元数据dc:Date         "2011-12-07"
+信息(prcgen):I1047: 已添加的元数据ISBN            "123456789X"
+信息(prcgen):I1047: 已添加的元数据dc:Creator      "Perry Garvin"
+信息(prcgen):I1047: 已添加的元数据dc:Publisher    "Amazon.com"
+信息(prcgen):I1047: 已添加的元数据dc:Subject      "Reference"
+信息(prcgen):I1047: 已添加的元数据dc:Description  "A short paragraph describing the publication …"
+信息(prcgen):I1002: 解析文件  0000002
+信息(prcgen):I1015: 创建 PRC 文件
+信息(prcgen):I1006: 分析超链接
+信息(prcgen):I1008: 分析读取起始位置
+信息(prcgen):I1049: 创建目录     网址： /var/folders/4l/v21_twrs785_d4z1spc_11kr0000gn/T/mobi-UWjwWU/myKindleBook/toc.ncx
+信息(pagemap):I8000: 没有在本书中发现页面图像
+信息(prcgen):I1045: 本书中使用 UNICODE 范围计算
+信息(prcgen):I1046: 已发现的 UNICODE 范围：Basic Latin [20..7E]
+信息(prcgen):I1017: 创建 PRC 文件，记录数：  0000002
+信息(prcgen):I1039: 最终统计 - 文本压缩为（原始大小的 %）：  34.30%
+信息(prcgen):I1040: 文档标识符是： "My_Kindle_Book"
+信息(prcgen):I1041: 文件格式版本是 V6
+信息(prcgen):I1031: 保存 PRC 文件
+信息(prcgen):I1032: 成功创建 PRC
+信息(prcgen):I1016: 创建改进的 PRC 文件
+信息(prcgen):I1007: 分析媒体链接
+信息(prcgen):I1011: 写入媒体链接
+信息(prcgen):I1009: 分析指导项
+信息(prcgen):I1039: 最终统计 - 文本压缩为（原始大小的 %）：  34.79%
+信息(prcgen):I1041: 文件格式版本是 V8
+信息(prcgen):I15000:可交付标准Mobi文件大小约为：  0000064KB
+信息(prcgen):I15001:  KF8 可交付文件大小约为：  0000066KB
+信息(prcgen):I1036: 成功创建 Mobi 域名文件
+```
+
 # 参考
 * [How to Make an Amazon Kindle Book using HTML and CSS](http://www.perrygarvin.com/blog/2012/01/16/how-to-make-an-amazon-kindle-book-using-html-and-css/)
 * [Amazon Kindle Publishing Guidelines](http://kindlegen.s3.amazonaws.com/AmazonKindlePublishingGuidelines.pdf)
 * [EPUB Publications 3.0](http://www.idpf.org/epub/30/spec/epub30-publications.html)
+* [How to Make a Kindle eBook from Scratch](https://www.aliciaramirez.com/2014/05/how-to-make-a-kindle-ebook-from-scratch/)
+
